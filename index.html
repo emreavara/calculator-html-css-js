@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
+    <title> Calculator</title>
+  </head>    
     <div class="content">
         <div id="resultDiv">
             <p
@@ -18,28 +22,26 @@
         </div>
       
       <table class="number-pad">
-        <tr class="row-class">
-          <td id="num1" class="number-class" value="1">1</td>
-          <td id="num2" class="number-class" value="2">2</td>
-          <td id="num3" class="number-class" value="3">3</td>
-          <td id="num0" class="number-class" value="0">0</td>
-          <td id="sum" class="number-class" value="+">/</td>
-
+        <tr>
+          <td class="number-class" onclick="onClickNumber(1)">1</td>
+          <td class="number-class" onclick="onClickNumber(2)">2</td>
+          <td class="number-class" onclick="onClickNumber(3)">3</td>
+          <td class="number-class" onclick="onClickNumber(0)">0</td>
+          <td class="number-class" onclick="onClickOperation('/')">/</td>
         </tr>
-        <tr class="row-class">
-            <td id="num4" class="number-class" value="4">4</td>
-            <td id="num5" class="number-class" value="5">5</td>
-            <td id="num6" class="number-class" value="6">6</td>
-            <td id="sum" class="number-class" value="+">-</td>
-            <td id="sum" class="number-class" value="+">+</td>
-            
+        <tr>
+            <td class="number-class" onclick="onClickNumber(4)">4</td>
+            <td class="number-class" onclick="onClickNumber(5)">5</td>
+            <td class="number-class" onclick="onClickNumber(6)">6</td>
+            <td class="number-class" onclick="onClickOperation('-')">-</td>
+            <td class="number-class" onclick="onClickOperation('+')">+</td>
         </tr>
-        <tr class="row-class">
-            <td id="num7" class="number-class" value="7">7</td>
-            <td id="num8" class="number-class" value="8">8</td>
-            <td id="num9" class="number-class" value="9">9</td>
-            <td id="sum" class="number-class" value="+">*</td>
-            <td id="sum" class="number-class" value="+">=</td>
+        <tr>
+            <td class="number-class" onclick="onClickNumber(7)">7</td>
+            <td class="number-class" onclick="onClickNumber(8)">8</td>
+            <td class="number-class" onclick="onClickNumber(9)">9</td>
+            <td class="number-class" onclick="onClickOperation('*')">*</td>
+            <td class="number-class" onclick="onClickOperation('=')">=</td>
         </tr>
       </table>
     </div>
