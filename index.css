@@ -1,0 +1,37 @@
+.content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.number-class {
+    text-align: center;
+    size: 1em;
+    width:fit-content;
+    padding: 0.5em;
+    font-size: 24px;
+    border: 1px solid #534666;
+    background-color: #138086;
+    color:#E6E6E6;
+}
+#resultDiv{
+    border-radius: 20px 20px 0px 0px;
+    background-color: #000000;
+    align-content: center;
+
+}
+.result-class{
+    padding: 1em;
+    font-size: 24px;
+    text-align: right;
+    background-color: #138086;
+    color:#E6E6E6  
+}
+#result{
+    width: max-content;
+    margin: 0;
+}
+.number-class:hover{
+    border: 0px;
+    background-color: #EEB462;
+}
