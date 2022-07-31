@@ -4,45 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script type="text/javascript" src="index.js"></script>
+    
     <link rel="stylesheet" href="index.css" />
     <title> Calculator</title>
-  </head>    
+  </head>  
+  <body>
+    <script type="text/javascript" src="index.js"></script>  
     <div class="content">
-        <div id="resultDiv">
+        <div>
             <p
             class="result-class"
             id="result"
             type="text"
-            name="result"
-            value="0"
             placeholder="0"
+            maxlength="9"
             readonly
           >0</p>
         </div>
       
       <table class="number-pad">
         <tr>
-          <td class="number-class" onclick="onClickNumber(1)">1</td>
-          <td class="number-class" onclick="onClickNumber(2)">2</td>
-          <td class="number-class" onclick="onClickNumber(3)">3</td>
-          <td class="number-class" onclick="onClickNumber(0)">0</td>
-          <td class="number-class" onclick="onClickOperation('/')">/</td>
+          <td class="keys" onclick="onClickNumber(1)">1</td>
+          <td class="keys" onclick="onClickNumber(2)">2</td>
+          <td class="keys" onclick="onClickNumber(3)">3</td>
+          <td class="keys operators" onclick="onClickOperation('/')">/</td>
+          <td class="keys signs" rowspan="2" onclick="reset()">C</td>
         </tr>
         <tr>
-            <td class="number-class" onclick="onClickNumber(4)">4</td>
-            <td class="number-class" onclick="onClickNumber(5)">5</td>
-            <td class="number-class" onclick="onClickNumber(6)">6</td>
-            <td class="number-class" onclick="onClickOperation('-')">-</td>
-            <td class="number-class" onclick="onClickOperation('+')">+</td>
+            <td class="keys" onclick="onClickNumber(4)">4</td>
+            <td class="keys" onclick="onClickNumber(5)">5</td>
+            <td class="keys" onclick="onClickNumber(6)">6</td>
+            <td class="keys operators" onclick="onClickOperation('-')">-</td>
         </tr>
         <tr>
-            <td class="number-class" onclick="onClickNumber(7)">7</td>
-            <td class="number-class" onclick="onClickNumber(8)">8</td>
-            <td class="number-class" onclick="onClickNumber(9)">9</td>
-            <td class="number-class" onclick="onClickOperation('*')">*</td>
-            <td class="number-class" onclick="onClickOperation('=')">=</td>
+            <td class="keys" onclick="onClickNumber(7)">7</td>
+            <td class="keys" onclick="onClickNumber(8)">8</td>
+            <td class="keys" onclick="onClickNumber(9)">9</td>
+            <td class="keys operators" onclick="onClickOperation('*')">*</td>
+            <td class="keys signs" rowspan="2" onclick="onClickOperation('=')">=</td>
         </tr>
+        <tr>
+
+          <td class="keys" colspan="2"onclick="onClickNumber(0)">0</td>
+          <td class="keys" onclick="onClickNumber('.')">.</td>
+          <td class="keys operators" onclick="onClickOperation('+')">+</td>
+      </tr>
       </table>
     </div>
   </body>
